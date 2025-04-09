@@ -51,9 +51,6 @@ kubectl port-forward svc/quote-release-service 5000:5000
 
 [Visit the app](http://<vm-ip>:5000)
 
-
-
-
 ```
 quote-app/
 ├── app.py                   # Flask app code
@@ -67,8 +64,6 @@ quote-app/
 │       └── service.yaml
 └── README.md                # This file
 ```
-
-
 
 ✅ **Features Implemented**
 
