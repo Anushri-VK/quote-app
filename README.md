@@ -21,28 +21,33 @@ A simple Flask-based application that displays random quotes. This project was c
 ```bash
 git clone https://github.com/Anushri-VK/quote-app.git
 cd quote-app
+```
 
 ### 2. Dockerize the App
 
 ```bash
 docker build -t hustlex/quote-app .
 docker run -p 5000:5000 hustlex/quote-app
+```
 
 ### 3. Helm Chart Deployment
 
 ```bash
 cd quote-app-chart
+```
 
 Install the app using Helm:
 
 ```bash
 helm install quote-release .
+```
 
 ### 4. Access the App
 If running on a VM or Minikube, use port-forwarding:
 
 ```bash
 kubectl port-forward svc/quote-release-service 5000:5000
+```
 
 Then visit: http://<vm-ip>:5000
 
