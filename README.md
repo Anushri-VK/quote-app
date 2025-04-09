@@ -49,21 +49,10 @@ If running on a VM or Minikube, use port-forwarding:
 kubectl port-forward svc/quote-release-service 5000:5000
 ```
 
-Then visit: http://<vm-ip>:5000
+[Visit the app](http://localhost:5000)
 
-📁 Project Structure
-quote-app/
-├── app.py                   # Flask app code
-├── Dockerfile               # Docker config
-├── requirements.txt         # Python dependencies
-├── quote-app-chart/         # Helm chart directory
-│   ├── Chart.yaml
-│   ├── values.yaml
-│   └── templates/
-│       ├── deployment.yaml
-│       └── service.yaml
-└── README.md                # This file
 
+<pre><code>```text quote-app/ ├── app.py # Flask app code ├── Dockerfile # Docker config ├── requirements.txt # Python dependencies ├── quote-app-chart/ # Helm chart directory │ ├── Chart.yaml │ ├── values.yaml │ └── templates/ │ ├── deployment.yaml │ └── service.yaml └── README.md # This file ``` </code></pre>
 
 ✅ Features Implemented
 ✅ Flask-based quote app
